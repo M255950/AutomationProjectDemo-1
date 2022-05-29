@@ -19,14 +19,14 @@ public class UpstoxBase {
 		
 		props=new Properties();
 		try {
-			FileInputStream file=new FileInputStream("D:\\Software Testing\\UpstoxPracticeProject\\src\\main\\java\\com\\upstox\\resources\\config.properties");
+			FileInputStream file=new FileInputStream("C:\\Users\\Santosh\\Desktop\\My Git Work\\AutomationProjectDemo\\src\\main\\java\\com\\upstox\\resources\\config.properties");
 			props.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
 		if(props.getProperty("browser").equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Software Testing\\UpstoxPracticeProject\\src\\main\\java\\com\\upstox\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Santosh\\Desktop\\My Git Work\\AutomationProjectDemo\\src\\main\\java\\com\\upstox\\resources\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}else if(props.getProperty("browser").equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "D:\\Software Testing\\UpstoxPracticeProject\\src\\main\\java\\com\\upstox\\resources\\drivers\\geckodriver.exe");
