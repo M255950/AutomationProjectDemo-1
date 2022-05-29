@@ -1,65 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-28T09:40:34 IST" name="Suite" finished-at="2022-04-28T09:41:51 IST" duration-ms="76818">
+  <suite started-at="2022-05-29T13:48:42 IST" name="Default suite" finished-at="2022-05-29T13:49:27 IST" duration-ms="45419">
     <groups>
     </groups>
-    <test started-at="2022-04-28T09:40:34 IST" name="Test" finished-at="2022-04-28T09:41:51 IST" duration-ms="76818">
+    <test started-at="2022-05-29T13:48:42 IST" name="Default test" finished-at="2022-05-29T13:49:27 IST" duration-ms="45419">
       <class name="com.upstox.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.upstox.tests.HomePageTest@543588e6]" started-at="2022-04-28T09:41:32 IST" name="setup" finished-at="2022-04-28T09:41:38 IST" duration-ms="6699" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.upstox.tests.HomePageTest@662b4c69]" started-at="2022-05-29T13:48:42 IST" name="setup" finished-at="2022-05-29T13:48:50 IST" duration-ms="8642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateBuyingFun()[pri:1, instance:com.upstox.tests.HomePageTest@543588e6]" started-at="2022-04-28T09:41:38 IST" name="validateBuyingFun" finished-at="2022-04-28T09:41:50 IST" duration-ms="11328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateBuyingFun -->
-        <test-method is-config="true" signature="closeTest()[pri:0, instance:com.upstox.tests.HomePageTest@543588e6]" started-at="2022-04-28T09:41:50 IST" name="closeTest" finished-at="2022-04-28T09:41:51 IST" duration-ms="1557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTest -->
-      </class> <!-- com.upstox.tests.HomePageTest -->
-      <class name="com.upstox.tests.SignInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:40:34 IST" name="setup" finished-at="2022-04-28T09:40:44 IST" duration-ms="9533" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateSignInPage()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:40:44 IST" name="validateSignInPage" finished-at="2022-04-28T09:40:44 IST" duration-ms="194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSignInPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:40:44 IST" name="teardown" finished-at="2022-04-28T09:40:45 IST" duration-ms="961" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:40:45 IST" name="setup" finished-at="2022-04-28T09:40:52 IST" duration-ms="6551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateSignInFunWithCurroctIdPass()[pri:1, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:40:52 IST" name="validateSignInFunWithCurroctIdPass" finished-at="2022-04-28T09:41:22 IST" duration-ms="30581" status="FAIL">
+        <test-method signature="validateTermAndConditionPage()[pri:3, instance:com.upstox.tests.HomePageTest@662b4c69]" started-at="2022-05-29T13:48:50 IST" name="validateTermAndConditionPage" finished-at="2022-05-29T13:49:26 IST" duration-ms="35693" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='yob']"}
-  (Session info: chrome=100.0.4896.127)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Terms & Conditions']"}
+  (Session info: chrome=102.0.5005.63)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-MHPIMKC', ip: '192.168.31.186', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Santosh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e70964edc903c4ec8c4a5e245413205d
-*** Element info: {Using=xpath, value=//input[@name='yob']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Santosh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09296a190ad673c994b798b1193979cc
+*** Element info: {Using=xpath, value=//div[text()='Terms & Conditions']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='yob']"}
-  (Session info: chrome=100.0.4896.127)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Terms & Conditions']"}
+  (Session info: chrome=102.0.5005.63)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-MHPIMKC', ip: '192.168.31.186', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Santosh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e70964edc903c4ec8c4a5e245413205d
-*** Element info: {Using=xpath, value=//input[@name='yob']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Santosh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:59025}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09296a190ad673c994b798b1193979cc
+*** Element info: {Using=xpath, value=//div[text()='Terms & Conditions']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -77,9 +51,18 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-at com.upstox.pages.PassCodePage.verifyOnPasscodePage(PassCodePage.java:30)
-at com.upstox.tests.SignInPageTest.validateSignInFunWithCurroctIdPass(SignInPageTest.java:31)
+at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at com.upstox.pages.HomePage.clickOnTermsPage(HomePage.java:74)
+at com.upstox.tests.HomePageTest.validateTermAndConditionPage(HomePageTest.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,24 +96,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSignInFunWithCurroctIdPass -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:41:22 IST" name="teardown" finished-at="2022-04-28T09:41:23 IST" duration-ms="959" status="PASS">
+        </test-method> <!-- validateTermAndConditionPage -->
+        <test-method is-config="true" signature="closeTest()[pri:0, instance:com.upstox.tests.HomePageTest@662b4c69]" started-at="2022-05-29T13:49:26 IST" name="closeTest" finished-at="2022-05-29T13:49:27 IST" duration-ms="1011" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:41:23 IST" name="setup" finished-at="2022-04-28T09:41:30 IST" duration-ms="6590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateSignInFunWithIncurroctIdPass()[pri:2, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:41:30 IST" name="validateSignInFunWithIncurroctIdPass" finished-at="2022-04-28T09:41:31 IST" duration-ms="805" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateSignInFunWithIncurroctIdPass -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.upstox.tests.SignInPageTest@6d4e5011]" started-at="2022-04-28T09:41:31 IST" name="teardown" finished-at="2022-04-28T09:41:32 IST" duration-ms="974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.upstox.tests.SignInPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeTest -->
+      </class> <!-- com.upstox.tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

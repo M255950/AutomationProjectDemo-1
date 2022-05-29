@@ -27,7 +27,7 @@ public class SignInPageTest extends UpstoxBase{
 
 	@Test(priority = 1)
 	void validateSignInFunWithCurroctIdPass() {
-		passCode=login.verifyLoginByCurrectInput("asdh", props.getProperty("password"));
+		passCode=login.verifyLoginByCurrectInput(props.getProperty("userID"), props.getProperty("password"));
 		Assert.assertTrue(passCode.verifyOnPasscodePage());
 	}
 	
