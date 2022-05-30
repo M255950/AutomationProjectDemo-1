@@ -36,7 +36,7 @@ public class HomePageTest extends UpstoxBase {
 		Assert.assertTrue(homePage.clickOnShareToBuy("RELIANCE"));
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 2)
 	void validateTermAndConditionPage() {
 		homePage.verifyOnHomePage();
 		homePage.clickOnUserIcon();
