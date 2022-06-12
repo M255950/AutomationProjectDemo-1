@@ -30,7 +30,7 @@ public class HomePageTest extends UpstoxBase {
 		Assert.assertTrue(homePage.verifyOnHomePage());
 	}
 
-	@Test(priority = 1)
+	@Test(priority =0)
 	void validateBuyingFun() throws InterruptedException {
 		homePage.verifyOnHomePage();
 		Assert.assertTrue(homePage.clickOnShareToBuy("RELIANCE"));
